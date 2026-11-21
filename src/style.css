@@ -111,10 +111,10 @@ main p {
 
 .essentials-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
   align-items: center;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -124,7 +124,7 @@ main p {
 .image-slideshow {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 12px;
 }
