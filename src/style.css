@@ -23,6 +23,155 @@ body {
   margin: 0 auto;
 }
 
+/* ========================================
+   DARK MODE
+======================================== */
+
+/* GENERAL */
+
+body.dark-mode {
+  background: #0F172A;
+  color: #F8FAFC;
+}
+
+/* MAIN BACKGROUND */
+
+body.dark-mode main,
+body.dark-mode .secondary,
+body.dark-mode .yoga-section {
+  background: #0F172A;
+  color: #F8FAFC;
+}
+
+/* HEADINGS AND TEXT */
+
+body.dark-mode main h2,
+body.dark-mode .secondary h2,
+body.dark-mode .essentials-content,
+body.dark-mode .essentials-content h2,
+body.dark-mode .essentials-content h3,
+body.dark-mode .essentials-content p,
+body.dark-mode .essentials-content li,
+body.dark-mode .yoga-content,
+body.dark-mode .yoga-content h2,
+body.dark-mode .yoga-content p {
+  color: #F8FAFC;
+}
+
+/* ESSENTIALS BOX */
+
+body.dark-mode .essentials-content {
+  background-color: #243247;
+  border-color: #4CAF50;
+}
+
+/* HIDDEN GEMS CARDS */
+
+body.dark-mode .cards {
+  background: #1E293B;
+}
+
+body.dark-mode .cards h4 {
+  color: #F8FAFC;
+}
+
+body.dark-mode .cards p {
+  color: #CBD5E1;
+}
+
+/* BUTTONS */
+
+body.dark-mode .card-button,
+body.dark-mode .yoga-button,
+body.dark-mode header a {
+  background: #243247;
+  color: #F8FAFC;
+  border-color: #4CAF50;
+}
+
+body.dark-mode .card-button:hover,
+body.dark-mode .yoga-button:hover,
+body.dark-mode header a:hover {
+  background: #4CAF50;
+  color: #0F172A;
+}
+
+/* GREEN SECTION LABELS */
+
+body.dark-mode .section-label,
+body.dark-mode .yoga-content h3 {
+  color: #86D78B;
+}
+
+/* TOGGLE BUTTON */
+
+body.dark-mode .theme-toggle {
+  background: #1E293B;
+  color: #F8FAFC;
+  border-color: #86D78B;
+}
+
+body.dark-mode .theme-toggle:hover {
+  background: #334155;
+}
+
+/* FOOTER */
+
+body.dark-mode footer {
+  color: #F8FAFC;
+}
+
+body.dark-mode footer a {
+  color: #F8FAFC;
+}
+
+
+/* DARK MODE TOGGLE */
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+
+  padding: 12px 20px;
+
+  background: #FDF4FF;
+  color: #1E1B4B;
+
+  border: 2px solid #4CAF50;
+  border-radius: 30px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: #E9D5FF;
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid #86D78B;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .theme-toggle {
+    top: 12px;
+    right: 12px;
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+}
+
 
 /* ========================================
    HEADER

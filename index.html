@@ -21,6 +21,22 @@
   <body>
     <div class="container">
 
+<body>
+
+  <!-- DARK MODE BUTTON -->
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Activate dark mode"
+    aria-pressed="false"
+  >
+    🌙 Dark Mode
+  </button>
+
+  <div class="container">
+
+
       <!-- =================================
            HEADER
       ================================= -->
@@ -458,5 +474,49 @@
       </footer>
 
     </div>
+
+<script>
+  const themeToggle = document.getElementById("theme-toggle");
+
+  function applyTheme(isDark) {
+    document.body.classList.toggle("dark-mode", isDark);
+
+    themeToggle.textContent = isDark
+      ? "☀️ Light Mode"
+      : "🌙 Dark Mode";
+
+    themeToggle.setAttribute(
+      "aria-label",
+      isDark ? "Activate light mode" : "Activate dark mode"
+    );
+
+    themeToggle.setAttribute("aria-pressed", String(isDark));
+  }
+
+  // Restore the user's previous choice
+  let savedTheme = null;
+
+  try {
+    savedTheme = localStorage.getItem("nyc-theme");
+  } catch (error) {
+    // The button still works if storage is unavailable.
+  }
+
+  applyTheme(savedTheme === "dark");
+
+  // Switch theme when button is clicked
+  themeToggle.addEventListener("click", function () {
+    const isDark = !document.body.classList.contains("dark-mode");
+
+    applyTheme(isDark);
+
+    try {
+      localStorage.setItem("nyc-theme", isDark ? "dark" : "light");
+    } catch (error) {
+      // Ignore storage restrictions.
+    }
+  });
+</script>
+
   </body>
 </html>
