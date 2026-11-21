@@ -195,6 +195,9 @@ main p {
   min-width: 0;
   text-align: left;
   color: #1E1B4B;
+  font-family: "poppins", sans-serif;
+  padding-top: 30px;
+  background-color: #FDF4FF;
 }
 
 .essentials-content h2 {
