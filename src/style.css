@@ -488,10 +488,20 @@ main p {
   border-radius: 12px;
 }
 
+
 /* YOGA BOOKING BUTTON */
 
 .yoga-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  max-width: 100%;
+  align-self: flex-start;
+
+  padding: 12px 20px;
+  margin-top: 25px;
 
   background-color: #FDF4FF;
   color: #1E1B4B;
@@ -499,22 +509,21 @@ main p {
   border: 2px solid #4CAF50;
   border-radius: 6px;
 
-  padding: 14px 22px;
-  margin-top: 30px;
-
   font-family: "Poppins", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
 
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
 
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    transform 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.yoga-button:hover {
+  background-color: #4CAF50;
+  color: white;
+  transform: translateY(-3px);
 }
 
 .yoga-button:hover {
