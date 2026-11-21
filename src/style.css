@@ -10,10 +10,10 @@ body {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/central_park.jpg");
+    url("src/images/central_park.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color:#FFF9EC;
   text-align: center;
   padding: 200px 0;
 }
