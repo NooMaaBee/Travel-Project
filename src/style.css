@@ -58,8 +58,6 @@ header a {
 footer {
   color: #1E1B4B;
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6), url("images/sunset.avif"));
-
-  text-align: center;
   padding: 30px 20px;
   font-size: 14px;
 }
