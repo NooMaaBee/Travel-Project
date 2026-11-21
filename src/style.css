@@ -374,6 +374,82 @@ header a,
   }
 }
 
+/* ========================================
+   YOGA IN CENTRAL PARK
+======================================== */
+
+.yoga-section {
+  padding: 100px 30px;
+  background: #F0F7FF;
+}
+
+.yoga-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* YOGA TEXT */
+
+.yoga-content {
+  color: #1E1B4B;
+}
+
+.yoga-content h3 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.yoga-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.yoga-content p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* YOGA IMAGE */
+
+.yoga-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+  .yoga-section {
+    padding: 60px 20px;
+  }
+
+  .yoga-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .yoga-content h2 {
+    font-size: 28px;
+  }
+
+  .yoga-content p {
+    font-size: 14px;
+  }
+}
+
 
 
 /* FOOTER BACKGROUND */
