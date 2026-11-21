@@ -207,8 +207,21 @@ main p {
   font-family: "poppins", sans-serif;
   padding: 30px;
   background-color: #FDF4FF;
-  border-radius: 4px;
-  border-color: #4CAF50;
+
+
+/* ESSENTIALS TEXT BOX */
+
+.essentials-content {
+  background-color: #FDF4FF;
+  border: 2px solid #4CAF50;
+  border-radius: 12px;
+
+  padding: 30px;
+  color: #1E1B4B;
+  text-align: left;
+  min-width: 0;
+}
+
 }
 
 .essentials-content h2 {
