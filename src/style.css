@@ -13,7 +13,7 @@ header {
   )), url("images/central_park.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color:#FFF9EC;
+  color:#F0F7FF;
   text-align: center;
   padding: 100px 0;
 }
@@ -45,7 +45,7 @@ header a {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  color: #fffbeb;
+  color: #F0F7FF;
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
@@ -56,14 +56,14 @@ header a {
 }
 
 footer {
-  color: #FFF9EC;
+  color: #F0F7FF;
   text-align: center;
   padding: 30px 20px;
   font-size: 14px;
 }
 
 footer a {
-  color: #FFF9EC;
+  color: #F0F7FF;
 }
 
 @media (max-width: 900px) {
