@@ -9,8 +9,9 @@ body {
 }
 
 header {
-  background-image: 
-    url("src/images/central_park.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6
+  )), url("
+  images/central_park.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color:#FFF9EC;
