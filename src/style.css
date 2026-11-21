@@ -296,6 +296,44 @@ main p {
   padding: 0 20px 25px;
 }
 
+
+/* HIDDEN GEMS BUTTONS */
+
+.card-button {
+  display: inline-block;
+  background-color: #FDF4FF;
+  color: #1E1B4B;
+
+  padding: 14px 22px;
+  margin: 20px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  border-radius: 6px;
+  transition: background-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.card-button:hover {
+  background-color: #E9D5FF;
+  transform: translateY(-3px);
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+.card-button:focus-visible {
+  outline: 3px solid #7C3AED;
+  outline-offset: 3px;
+}
+
+
 /* TABLET */
 
 @media (max-width: 900px) {
