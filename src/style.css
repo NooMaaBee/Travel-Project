@@ -78,11 +78,11 @@ header a {
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background: rgba(0,0,0,05),rgba(0,0,0,0.5),#4CAF50;
+  background:#F0F7FF;
 }
 
 header a:hover {
-  background: #F8FAFC;
+  background: #4CAF50;
 }
 
 
