@@ -9,7 +9,8 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5
+  )),
     url("src/images/central_park.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,12 +53,23 @@ header a {
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background: white;
+  background: FFF9EC;
+}
+
+footer {
+  color: FFF9EC;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: FFF9EC;
 }
 
 @media (max-width: 900px) {
   header {
-    padding: 60px 0;
+    padding: 60px 20px;
   }
 
   header h1 {
