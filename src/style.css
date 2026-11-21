@@ -55,31 +55,119 @@ header a {
   background: FFF9EC;
 }
 
+
+/* FOOTER */
+
 footer {
-  color: #1E1B4B;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6), url("images/nycbynight.jpg"));
-  padding: 30px 20px;
+  background-image: linear-gradient(
+      rgba(15, 23, 42, 0.72),
+      rgba(15, 23, 42, 0.72)
+    ),
+    url("images/nycbynight.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: #F8FAFC;
+  padding: 70px 50px 30px;
+}
+
+/* THREE COLUMNS */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 50px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.footer-section p {
   font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* VERTICAL TRAVEL LINKS */
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links > li {
+  margin-bottom: 18px;
 }
 
 footer a {
-  color: #1E1B4B;
+  color: #F8FAFC;
+  text-decoration: none;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* AIRPORT DROPDOWN */
+
+.airport-menu summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.airport-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.airport-menu summary::after {
+  content: " ▾";
+}
+
+.airport-menu[open] summary::after {
+  content: " ▴";
+}
+
+.airport-options {
+  display: none;
+  list-style: none;
+  padding: 12px 0 0 15px;
+  margin: 0;
+}
+
+.airport-options li {
+  margin-bottom: 10px;
+}
+
+.airport-menu:hover .airport-options,
+.airport-menu:focus-within .airport-options,
+.airport-menu[open] .airport-options {
+  display: block;
+}
+
+/* CREDITS */
+
+.footer-credit {
+  text-align: center;
+  font-size: 12px;
+  margin: 55px 0 0;
+  opacity: 0.85;
+}
+
+/* MOBILE */
+
 @media (max-width: 900px) {
-  header {
-    padding: 60px 20px;
+  footer {
+    padding: 50px 25px 25px;
   }
 
-  header h1 {
-    font-size: 48px;
-  }
-
-  header h2 {
-    font-size: 20px;
-  }
-
-  header h3 {
-    font-size: 12px;
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
   }
 }
