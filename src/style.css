@@ -78,7 +78,7 @@ header a {
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background: #FFF9EC;
+  background: rgba(0,0,0,05),rgba(0,0,0,0.5),#4CAF50;
 }
 
 header a:hover {
