@@ -207,7 +207,7 @@ main p {
   font-family: "poppins", sans-serif;
   padding: 30px;
   background-color: #FDF4FF;
-
+}
 
 /* ESSENTIALS TEXT BOX */
 
@@ -222,7 +222,6 @@ main p {
   min-width: 0;
 }
 
-}
 
 .essentials-content h2 {
   font-size: 36px;
