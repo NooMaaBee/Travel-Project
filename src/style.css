@@ -1,5 +1,7 @@
 
-/* GENERAL */
+/* ========================================
+   GENERAL
+======================================== */
 
 * {
   box-sizing: border-box;
@@ -13,6 +15,7 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: #F0F7FF;
+  color: #1E1B4B;
 }
 
 .container {
@@ -21,7 +24,9 @@ body {
 }
 
 
-/* HEADER */
+/* ========================================
+   HEADER
+======================================== */
 
 header {
   background-image:
@@ -63,36 +68,49 @@ header h3 {
 }
 
 
-/* HEADER BUTTON */
+/* ========================================
+   HEADER BUTTON
+======================================== */
 
 header a {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #1E1B4B;
+  display: inline-block;
 
   padding: 16px 32px;
   margin-top: 32px;
-  display: inline-block;
+
+  background: #F0F7FF;
+  color: #1E1B4B;
+
+  border: 2px solid #4CAF50;
+  border-radius: 6px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
 
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background:#F0F7FF;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 header a:hover {
   background: #4CAF50;
+  color: #FFFFFF;
 }
 
 
-/* MAIN CONTENT */
+/* ========================================
+   MAIN CONTENT
+======================================== */
 
 main {
   background: #F0F7FF;
   color: #1E1B4B;
-   padding: 100px 30px;
-  text-align: center;
+  padding: 100px 30px;
 }
 
 main h2 {
@@ -101,39 +119,46 @@ main h2 {
 }
 
 main p {
-  max-width: 680px;
-  margin: 0 auto;
   line-height: 1.8;
 }
 
 
-
-/* ESSENTIALS GRID */
+/* ========================================
+   ESSENTIALS SECTION
+======================================== */
 
 .essentials-grid {
   display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+
+  grid-template-columns:
+    minmax(0, 3fr)
+    minmax(0, 2fr);
+
   gap: 40px;
   align-items: center;
 
   width: 100%;
   max-width: 1100px;
+
   margin: 0 auto 120px;
 }
 
 
+/* ========================================
+   IMAGE SLIDESHOW
+======================================== */
 
-
-
-/* IMAGE SLIDESHOW */
 .image-slideshow {
   position: relative;
+
   width: 100%;
   max-width: 600px;
   aspect-ratio: 4 / 3;
 
   overflow: hidden;
   border-radius: 12px;
+
+  background: #E2E8F0;
 }
 
 .image-slideshow img {
@@ -143,11 +168,13 @@ main p {
 
   width: 100%;
   height: 100%;
+
   object-fit: cover;
 
   opacity: 0;
   animation: imageRotation 16s infinite;
 }
+
 
 /* IMAGE TIMING */
 
@@ -166,6 +193,7 @@ main p {
 .image-slideshow img:nth-child(4) {
   animation-delay: -4s;
 }
+
 
 /* FADE ANIMATION */
 
@@ -191,47 +219,41 @@ main p {
   }
 }
 
-/* ESSENTIALS TEXT */
+
+/* ========================================
+   ESSENTIALS TEXT BOX
+======================================== */
 
 .essentials-content {
   min-width: 0;
-  text-align: left;
-  color: #1E1B4B;
-  font-family: "poppins", sans-serif;
-  padding: 30px;
-  background-color: #FDF4FF;
-}
 
-/* ESSENTIALS TEXT BOX */
-
-.essentials-content {
   background-color: #FDF4FF;
   border: 2px solid #4CAF50;
   border-radius: 12px;
 
   padding: 30px;
+
+  font-family: "Poppins", sans-serif;
   color: #1E1B4B;
   text-align: left;
-  min-width: 0;
 }
-
 
 .essentials-content h2 {
   font-size: 36px;
-  font-weight: 7000;
-  margin-bottom: 0 0 20px;
+  font-weight: 700;
+  margin: 0 0 20px;
 }
 
 .essentials-content p {
   font-size: 16px;
   line-height: 1.8;
-  margin-bottom:0 0 30px;
+  margin: 0 0 30px;
 }
 
 .essentials-content h3 {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 0 0 15px;
+  margin: 0 0 15px;
 }
 
 .essentials-content ul {
@@ -247,7 +269,7 @@ main p {
 
 .secondary {
   background: #F0F7FF;
-  padding: 100px 30px;
+  padding: 80px 0 100px;
 }
 
 .text-center {
@@ -256,11 +278,16 @@ main p {
 
 .secondary h2 {
   font-size: 36px;
+  font-weight: 700;
   color: #1E1B4B;
-  margin-bottom: 40px;
+
+  margin: 0 0 45px;
 }
 
-/* GRID LAYOUT */
+
+/* ========================================
+   GRID LAYOUT
+======================================== */
 
 .grid {
   display: grid;
@@ -268,28 +295,44 @@ main p {
 }
 
 .grid-3-columns {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* CARDS */
+
+/* ========================================
+   HIDDEN GEMS CARDS
+======================================== */
 
 .cards {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
   background: #FFFFFF;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.08);
 }
+
 
 /* CARD IMAGES */
 
 .cards img {
   display: block;
+
   width: 100%;
   height: 220px;
+
   object-fit: cover;
 }
+
 
 /* CARD TITLES */
 
@@ -297,8 +340,10 @@ main p {
   font-size: 20px;
   font-weight: 700;
   color: #1E1B4B;
+
   margin: 20px 20px 10px;
 }
+
 
 /* CARD DESCRIPTIONS */
 
@@ -306,48 +351,50 @@ main p {
   font-size: 14px;
   line-height: 1.8;
   color: #1E1B4B;
+
   margin: 0;
   padding: 0 20px 25px;
 }
 
 
-/* HIDDEN GEMS BUTTONS */
+/* ========================================
+   HIDDEN GEMS BUTTONS
+======================================== */
 
 .card-button {
   display: inline-block;
+  align-self: flex-start;
+
   background-color: #FDF4FF;
   color: #1E1B4B;
 
+  border: 2px solid #4CAF50;
+  border-radius: 6px;
+
   padding: 14px 22px;
-  margin: 20px;
+
+  margin: auto 20px 20px;
 
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1px;
+
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
 
-  border-radius: 6px;
-  transition: background-color 0.3s ease,
-              transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
 }
-/* BUTTON BORDERS */
-
-header a,
-.card-button {
-  border: 2px solid #4CAF50;
-  border-radius: 6px;
-}
-
-/* HOVER EFFECT */
 
 .card-button:hover {
-  background-color: #E9D5FF;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+
   transform: translateY(-3px);
 }
-
-/* KEYBOARD ACCESSIBILITY */
 
 .card-button:focus-visible {
   outline: 3px solid #7C3AED;
@@ -355,42 +402,21 @@ header a,
 }
 
 
-/* TABLET */
-
-@media (max-width: 900px) {
-  .grid-3-columns {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-  .grid-3-columns {
-    grid-template-columns: 1fr;
-  }
-
-  .secondary {
-    padding: 45px 10px;
-  }
-
-  .cards img {
-    height: 240px;
-  }
-}
-
 /* ========================================
    YOGA IN CENTRAL PARK
 ======================================== */
 
 .yoga-section {
-  padding: 100px 30px;
   background: #F0F7FF;
+  padding: 100px 0;
 }
 
 .yoga-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
   gap: 60px;
   align-items: center;
 
@@ -398,7 +424,10 @@ header a,
   margin: 0 auto;
 }
 
-/* YOGA TEXT */
+
+/* ========================================
+   YOGA TEXT
+======================================== */
 
 .yoga-content {
   color: #1E1B4B;
@@ -408,58 +437,53 @@ header a,
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3px;
+
   color: #4CAF50;
-  margin-bottom: 15px;
+
+  margin: 0 0 15px;
 }
 
 .yoga-content h2 {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 25px;
+
+  margin: 0 0 25px;
 }
 
 .yoga-content p {
   font-size: 16px;
   line-height: 1.9;
-  margin: 0;
+
+  margin: 0 0 20px;
 }
 
-/* YOGA IMAGE */
+.yoga-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ========================================
+   YOGA IMAGE
+======================================== */
 
 .yoga-image img {
   display: block;
+
   width: 100%;
   height: auto;
-  border-radius: 12px;
+
   object-fit: cover;
-}
-
-/* RESPONSIVE DESIGN */
-
-@media (max-width: 900px) {
-  .yoga-section {
-    padding: 60px 20px;
-  }
-
-  .yoga-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .yoga-content h2 {
-    font-size: 28px;
-  }
-
-  .yoga-content p {
-    font-size: 14px;
-  }
+  border-radius: 12px;
 }
 
 
-
-/* FOOTER BACKGROUND */
+/* ========================================
+   FOOTER BACKGROUND
+======================================== */
 
 footer {
+  width: 100%;
+
   background-image:
     linear-gradient(
       rgba(15, 23, 42, 0.72),
@@ -473,17 +497,24 @@ footer {
 
   color: #F8FAFC;
 
-   padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 100px 50px 50px;
 }
 
 
-/* FOOTER COLUMNS */
+/* ========================================
+   FOOTER COLUMNS
+======================================== */
 
 .footer-grid {
   display: grid;
+
   grid-template-columns: 1fr 2fr 2fr;
-  gap: 45px;
+
+  column-gap: 80px;
+  row-gap: 40px;
+
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-section {
@@ -493,20 +524,25 @@ footer {
 .footer-section h3 {
   font-size: 18px;
   font-weight: 700;
+
   margin: 0 0 20px;
 }
 
 .footer-section p {
   font-size: 14px;
   line-height: 1.8;
+
   margin: 0;
 }
 
 
-/* FOOTER LINKS */
+/* ========================================
+   FOOTER LINKS
+======================================== */
 
 .footer-links {
   list-style: none;
+
   padding: 0;
   margin: 0;
 }
@@ -525,20 +561,32 @@ footer a:hover {
 }
 
 
-/* AIRPORT DROPDOWN MENU */
+/* ========================================
+   AIRPORT DROPDOWN MENU
+======================================== */
 
-.airport-menu {
+.airport-menu summary {
   cursor: pointer;
-  outline-offset: 5px;
+  list-style: none;
 }
 
-.airport-menu span {
-  display: inline-block;
+.airport-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.airport-menu summary::after {
+  content: " ▾";
+}
+
+.airport-menu[open] summary::after {
+  content: " ▴";
 }
 
 .airport-options {
   display: none;
+
   list-style: none;
+
   padding: 12px 0 0 15px;
   margin: 0;
 }
@@ -548,25 +596,34 @@ footer a:hover {
 }
 
 .airport-menu:hover .airport-options,
-.airport-menu:focus-within .airport-options {
+.airport-menu:focus-within .airport-options,
+.airport-menu[open] .airport-options {
   display: block;
 }
 
 
-/* FOOTER CREDIT */
+/* ========================================
+   FOOTER CREDIT
+======================================== */
 
 .footer-credit {
   text-align: center;
+
   font-size: 12px;
   line-height: 1.6;
-  margin: 55px 0 0;
+
+  margin: 55px auto 0;
   opacity: 0.85;
 }
 
 
-/* RESPONSIVE DESIGN */
+/* ========================================
+   RESPONSIVE DESIGN - TABLET
+======================================== */
 
 @media (max-width: 900px) {
+
+  /* HEADER */
 
   header {
     padding: 60px 20px;
@@ -584,25 +641,88 @@ footer a:hover {
     font-size: 12px;
   }
 
+
+  /* MAIN */
+
+  main {
+    padding: 60px 20px;
+  }
+
+
+  /* ESSENTIALS */
+
+  .essentials-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    max-width: 600px;
+    margin-bottom: 70px;
+  }
+
+  .image-slideshow {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .essentials-content h2 {
+    font-size: 28px;
+  }
+
+
+  /* HIDDEN GEMS */
+
+  .secondary {
+    padding: 60px 0;
+  }
+
+  .grid-3-columns {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  /* YOGA */
+
+  .yoga-section {
+    padding: 60px 0;
+  }
+
+  .yoga-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .yoga-content h2 {
+    font-size: 28px;
+  }
+
+  .yoga-content p {
+    font-size: 14px;
+  }
+
+
+  /* FOOTER */
+
   footer {
-    padding: 50px 25px 25px;
+    padding: 60px 25px 30px;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 35px;
+    gap: 40px;
   }
 
-  main {
-    padding: 45px 20px;
-  }
-
-  main h2 {
-    font-size: 24px;
-  }
 }
 
-@media (max-width: 480px) {
+
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  /* HEADER */
 
   header h1 {
     font-size: 38px;
@@ -611,27 +731,64 @@ footer a:hover {
   header h3 {
     letter-spacing: 3px;
   }
-}
-/* MOBILE */
 
-@media (max-width: 900px) {
-  .essentials-grid {
+
+  /* MAIN */
+
+  main {
+    padding: 45px 20px;
+  }
+
+
+  /* ESSENTIALS */
+
+  .essentials-content {
+    padding: 25px;
+  }
+
+  .essentials-content p {
+    font-size: 14px;
+  }
+
+  .essentials-content ul {
+    font-size: 14px;
+  }
+
+
+  /* HIDDEN GEMS */
+
+  .grid-3-columns {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
 
-  .image-slideshow {
-    aspect-ratio: 4 / 3;
+  .secondary {
+    padding: 45px 0;
   }
 
-  .essentials-content h2 {
-    font-size: 28px;
+  .cards img {
+    height: 240px;
   }
+
+
+  /* YOGA */
+
+  .yoga-section {
+    padding: 60px 0;
+  }
+
 }
 
-/* ACCESSIBILITY */
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
 
 @media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
   .image-slideshow img {
     animation: none;
     opacity: 0;
@@ -640,4 +797,9 @@ footer a:hover {
   .image-slideshow img:first-child {
     opacity: 1;
   }
+
+  .card-button {
+    transition: none;
+  }
+
 }

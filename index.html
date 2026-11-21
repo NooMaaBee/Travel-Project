@@ -7,19 +7,24 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="src/style.css" />
+
     <title>Welcome to New York</title>
   </head>
 
   <body>
     <div class="container">
 
-      <!-- HEADER -->
+      <!-- =================================
+           HEADER
+      ================================= -->
+
       <header>
         <h3>.TRAVEL GUIDE.</h3>
         <h1>Welcome to New York</h1>
@@ -27,268 +32,331 @@
         <a href="#more">Learn more</a>
       </header>
 
-      <!-- MAIN CONTENT -->
-      
-<main id="more">
-  <div class="essentials-grid">
 
-    <!-- LEFT: ROTATING IMAGES -->
-    <div class="image-slideshow">
-      <img
-        src="src/images/Timesquare.jpg"
-        alt="Times Square in New York"
-      />
-      <img
-        src="src/images/statueofliberty.jpeg"
-        alt="Statue of Liberty"
-      />
-      <img
-        src="src/images/empirestate.jpeg"
-        alt="Empire State Building"
-      />
-      <img
-        src="src/images/metroploitanmuseum.jpeg"
-        alt="Metropolitan Museum of Art"
-      />
-    </div>
+      <!-- =================================
+           MAIN CONTENT
+      ================================= -->
 
-    <!-- RIGHT: TEXT -->
-    <div class="essentials-content">
-      <h2>Essentials</h2>
+      <main id="more">
 
-      <p>
-        Explore the five boroughs, iconic landmarks,
-        and unique neighborhoods of the city that
-        never sleeps.
-      </p>
+        <!-- ESSENTIALS SECTION -->
 
-      <h3>Must-see attractions</h3>
+        <section class="essentials-grid">
 
-      <ul>
-        <li>Times Square</li>
-        <li>Statue of Liberty</li>
-        <li>Empire State Building</li>
-        <li>Metropolitan Museum of Art</li>
-      </ul>
-    </div>
+          <!-- LEFT: IMAGE SLIDESHOW -->
 
-  </div>
+          <div class="image-slideshow">
 
-<!-- HIDDEN GEMS SECTION -->
+            <img
+              src="src/images/Timesquare.jpg"
+              alt="Times Square in New York"
+            />
 
-<section class="secondary">
-  <h2 class="text-center">Hidden Gems</h2>
+            <img
+              src="src/images/statueofliberty.jpeg"
+              alt="Statue of Liberty"
+            />
 
-  <div class="grid grid-3-columns">
+            <img
+              src="src/images/empirestate.jpeg"
+              alt="Empire State Building"
+            />
 
-    <!-- CARD 1: LOMBARDI'S -->
-    <div class="cards">
-      <img
-        src="src/images/lombardis.jpg"
-        alt="Pizza at Lombardi's in New York"
-      />
+            <img
+              src="src/images/metroploitanmuseum.jpeg"
+              alt="Metropolitan Museum of Art"
+            />
 
-      <h4>Lombardi's</h4>
-
-      <p>
-        Tucked on the corner of Mott and Spring Streets
-        in Little Italy, Lombardi's is credited as
-        America's very first pizzeria, founded by
-        Gennaro Lombardi in 1905.
-
-        The spot is famous for its large pies with
-        smoky, crisp crusts baked in a coal-and-gas
-        oven, generously topped with balanced tomato
-        sauce, whole-milk mozzarella, and classic
-        toppings like sweet Italian sausage.
-
-        With red-and-white checkered tablecloths and
-        framed family photos lining the red walls,
-        the dining room exudes classic, old-school
-        New York charm.
-
-        Keep in mind that the restaurant is cash-only—
-        while there is an ATM inside, bringing cash
-        ahead of time will save you the withdrawal fee.
-      </p>
-      <a
-  href="https://www.google.com/maps/search/?api=1&query=Lombardis+Pizza+New+York"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="card-button"
->
-  View on Google Maps
-</a>
-    </div>
-    
+          </div>
 
 
-    <!-- CARD 2: VINTAGE STORE -->
-    <div class="cards">
-      <img
-        src="src/images/vintagestore.jpeg"
-        alt="Vintage clothing boutique in New York"
-      />
+          <!-- RIGHT: ESSENTIALS TEXT BOX -->
 
-      <h4>Vintage Store</h4>
+          <div class="essentials-content">
 
-      <p>
-        Tucked away at 129 Eldridge Street on
-        Manhattan's Lower East Side, Vintage Store
-        is an intimate, tightly curated boutique
-        that feels like a true insider secret.
+            <h2>Essentials</h2>
 
-        Run by a pair of dedicated vintage collectors,
-        this tiny gem specializes in rare 1990s
-        Japanese and Italian designer pieces,
-        pre-1940s antique garments, and
-        one-of-a-kind handmade items.
+            <p>
+              Explore the five boroughs, iconic landmarks,
+              and unique neighborhoods of the city that
+              never sleeps.
+            </p>
 
-        Rather than sifting through endless racks,
-        shopping here feels like browsing a personal
-        archive where every piece has been thoughtfully
-        hand-selected for its craftsmanship and history.
-      </p>
-      <a
-  href="https://www.google.com/maps/search/?api=1&query=Vintage+Store+129+Eldridge+Street+New+York"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="card-button"
->
-  View on Google Maps
-</a>
-    </div>
+            <h3>Must-see attractions</h3>
+
+            <ul>
+              <li>Times Square</li>
+              <li>Statue of Liberty</li>
+              <li>Empire State Building</li>
+              <li>Metropolitan Museum of Art</li>
+            </ul>
+
+          </div>
+
+        </section>
 
 
-    <!-- CARD 3: THYME BAR -->
-    <div class="cards">
-      <img
-        src="src/images/thymebarnyc.jpeg"
-        alt="Creative cocktails at Thyme Bar NYC"
-      />
+        <!-- =================================
+             HIDDEN GEMS SECTION
+        ================================= -->
 
-      <h4>Thyme Bar</h4>
+        <section class="secondary">
 
-      <p>
-        Tucked inside a historic pre-war cellar beneath
-        a Flatiron bakery at 20 West 23rd Street,
-        Thyme Bar transforms cocktail hour into an
-        unforgettable, multi-sensory theatrical
-        experience.
+          <h2 class="text-center">Hidden Gems</h2>
 
-        Behind a discreet entrance lies a moody,
-        candlelit speakeasy adorned with lush greenery
-        and vintage apothecary touches, where mixology
-        is treated like fine art.
+          <div class="grid grid-3-columns">
 
-        Rather than simply pouring a glass, the
-        bartenders craft elaborate, whimsical creations—
-        think cocktails suspended from the ceiling,
-        poured out of genie bottles, smoked tableside,
-        or delicately paired with bite-sized macarons.
+            <!-- CARD 1: LOMBARDI'S -->
 
-        It is an intimate, imaginative hidden gem that
-        feels worlds away from the busy streets of
-        Manhattan above.
-      </p>
-      <a
-  href="https://www.google.com/maps/search/?api=1&query=Thyme+Bar+20+West+23rd+Street+New+York"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="card-button"
->
-  View on Google Maps
-</a>
-    </div>
+            <article class="cards">
 
-  </div>
-</section>
+              <img
+                src="src/images/lombardis.jpg"
+                alt="Pizza at Lombardi's in New York"
+                loading="lazy"
+              />
 
-<!-- YOGA IN CENTRAL PARK -->
+              <h4>Lombardi's</h4>
 
-<section class="yoga-section">
+              <p>
+                Tucked on the corner of Mott and Spring
+                Streets in Little Italy, Lombardi's is
+                credited as America's very first pizzeria,
+                founded by Gennaro Lombardi in 1905.
 
-  <div class="yoga-grid">
+                The spot is famous for its large pies
+                with smoky, crisp crusts baked in a
+                coal-and-gas oven, generously topped
+                with balanced tomato sauce, whole-milk
+                mozzarella, and classic toppings like
+                sweet Italian sausage.
 
-    <!-- LEFT: TEXT -->
-    <div class="yoga-content">
+                With red-and-white checkered tablecloths
+                and framed family photos lining the red
+                walls, the dining room exudes classic,
+                old-school New York charm.
 
-      <h3>WELLNESS & OUTDOORS</h3>
+                Keep in mind that the restaurant is
+                cash-only—while there is an ATM inside,
+                bringing cash ahead of time will save
+                you the withdrawal fee.
+              </p>
 
-      <h2>Yoga in Central Park</h2>
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Lombardis+Pizza+New+York"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-button"
+              >
+                View on Google Maps
+              </a>
 
-      <p>
-        Escape the fast-paced energy of New York City
-        and discover a peaceful retreat in the heart
-        of Manhattan. Practicing yoga in Central Park
-        offers a unique opportunity to reconnect
-        with nature while surrounded by one of the
-        world's most iconic skylines.
-
-        Whether you're a beginner or an experienced
-        yogi, the park's open lawns and tranquil
-        surroundings create the perfect setting
-        to stretch, breathe, and recharge.
-
-        From refreshing morning sessions to relaxing
-        sunset flows, outdoor yoga is a wonderful
-        way to experience a calmer side of
-        the city that never sleeps.
-      </p>
-
-    </div>
-
-    <!-- RIGHT: IMAGE -->
-    <div class="yoga-image">
-      <img
-        src="src/images/yoga-centralpark.jpg"
-        alt="People practicing outdoor yoga in Central Park, New York"
-        loading="lazy"
-      />
-    </div>
-
-  </div>
-
-</section>
-
-</main>
+            </article>
 
 
-      <!-- FOOTER -->
+            <!-- CARD 2: VINTAGE STORE -->
+
+            <article class="cards">
+
+              <img
+                src="src/images/vintagestore.jpeg"
+                alt="Vintage clothing boutique in New York"
+                loading="lazy"
+              />
+
+              <h4>Vintage Store</h4>
+
+              <p>
+                Tucked away at 129 Eldridge Street on
+                Manhattan's Lower East Side, Vintage Store
+                is an intimate, tightly curated boutique
+                that feels like a true insider secret.
+
+                Run by a pair of dedicated vintage
+                collectors, this tiny gem specializes in
+                rare 1990s Japanese and Italian designer
+                pieces, pre-1940s antique garments, and
+                one-of-a-kind handmade items.
+
+                Rather than sifting through endless racks,
+                shopping here feels like browsing a
+                personal archive where every piece has
+                been thoughtfully hand-selected for its
+                craftsmanship and history.
+              </p>
+
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Vintage+Store+129+Eldridge+Street+New+York"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-button"
+              >
+                View on Google Maps
+              </a>
+
+            </article>
+
+
+            <!-- CARD 3: THYME BAR -->
+
+            <article class="cards">
+
+              <img
+                src="src/images/thymebarnyc.jpeg"
+                alt="Creative cocktails at Thyme Bar NYC"
+                loading="lazy"
+              />
+
+              <h4>Thyme Bar</h4>
+
+              <p>
+                Tucked inside a historic pre-war cellar
+                beneath a Flatiron bakery at 20 West 23rd
+                Street, Thyme Bar transforms cocktail hour
+                into an unforgettable, multi-sensory
+                theatrical experience.
+
+                Behind a discreet entrance lies a moody,
+                candlelit speakeasy adorned with lush
+                greenery and vintage apothecary touches,
+                where mixology is treated like fine art.
+
+                Rather than simply pouring a glass, the
+                bartenders craft elaborate, whimsical
+                creations—think cocktails suspended from
+                the ceiling, poured out of genie bottles,
+                smoked tableside, or delicately paired
+                with bite-sized macarons.
+
+                It is an intimate, imaginative hidden gem
+                that feels worlds away from the busy
+                streets of Manhattan above.
+              </p>
+
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Thyme+Bar+20+West+23rd+Street+New+York"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-button"
+              >
+                View on Google Maps
+              </a>
+
+            </article>
+
+          </div>
+        </section>
+
+
+        <!-- =================================
+             YOGA IN CENTRAL PARK
+        ================================= -->
+
+        <section class="yoga-section">
+
+          <div class="yoga-grid">
+
+            <!-- LEFT: TEXT -->
+
+            <div class="yoga-content">
+
+              <h3>WELLNESS & OUTDOORS</h3>
+
+              <h2>Yoga in Central Park</h2>
+
+              <p>
+                Escape the fast-paced energy of New York
+                City and discover a peaceful retreat in
+                the heart of Manhattan. Practicing yoga
+                in Central Park offers a unique opportunity
+                to reconnect with nature while surrounded
+                by one of the world's most iconic skylines.
+              </p>
+
+              <p>
+                Whether you're a beginner or an experienced
+                yogi, the park's open lawns and tranquil
+                surroundings create the perfect setting
+                to stretch, breathe, and recharge.
+              </p>
+
+              <p>
+                From refreshing morning sessions to
+                relaxing sunset flows, outdoor yoga is
+                a wonderful way to experience a calmer
+                side of the city that never sleeps.
+              </p>
+
+            </div>
+
+
+            <!-- RIGHT: IMAGE -->
+
+            <div class="yoga-image">
+
+              <img
+                src="src/images/yoga-centralpark.jpg"
+                alt="People practicing outdoor yoga in Central Park, New York"
+                loading="lazy"
+              />
+
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+
+      <!-- =================================
+           FOOTER
+      ================================= -->
+
       <footer>
 
         <div class="footer-grid">
 
           <!-- COLUMN 1: TRAVEL LINKS -->
-          <nav class="footer-section" aria-label="Travel information">
+
+          <nav
+            class="footer-section"
+            aria-label="Travel information"
+          >
+
             <h3>Travel Links</h3>
 
             <ul class="footer-links">
 
-              <li class="airport-menu" tabindex="0">
-                <span>Airports ▾</span>
+              <li>
+                <details class="airport-menu">
 
-                <ul class="airport-options">
-                  <li>
-                    <a
-                      href="https://www.jfkairport.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      JFK Airport
-                    </a>
-                  </li>
+                  <summary>Airports</summary>
 
-                  <li>
-                    <a
-                      href="https://www.newarkairport.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Newark Liberty
-                    </a>
-                  </li>
-                </ul>
+                  <ul class="airport-options">
+
+                    <li>
+                      <a
+                        href="https://www.jfkairport.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        JFK Airport
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://www.newarkairport.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Newark Liberty
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </details>
               </li>
 
               <li>
@@ -312,46 +380,64 @@
               </li>
 
             </ul>
+
           </nav>
 
+
           <!-- COLUMN 2: ABOUT -->
+
           <section class="footer-section">
+
             <h3>About</h3>
 
             <p>
-              New York is the most populous city in the
-              United States and a global hub for finance,
-              culture, and media. The city consists of five
-              distinct boroughs: Manhattan, Brooklyn,
-              Queens, The Bronx, and Staten Island,
-              each with its own unique character.
-              It is world-famous for its iconic landmarks
-              like the Statue of Liberty, Central Park,
-              and Times Square, as well as its vast
-              diversity and fast-paced energy.
+              New York is the most populous city in
+              the United States and a global hub for
+              finance, culture, and media.
+
+              The city consists of five distinct
+              boroughs: Manhattan, Brooklyn, Queens,
+              The Bronx, and Staten Island, each with
+              its own unique character.
+
+              It is world-famous for its iconic
+              landmarks like the Statue of Liberty,
+              Central Park, and Times Square, as well
+              as its vast diversity and fast-paced energy.
             </p>
+
           </section>
 
+
           <!-- COLUMN 3: DISCOVER NEW YORK -->
+
           <section class="footer-section">
+
             <h3>Discover New York</h3>
 
             <p>
-              Beyond the bright lights and crowded avenues,
-              the true soul of New York lives in its quiet
-              corners, historic waterfronts, and close-knit
-              neighborhoods. This guide invites you to step
-              off the beaten path, slow down, and experience
-              the authentic, everyday magic of the city's
-              five boroughs.
+              Beyond the bright lights and crowded
+              avenues, the true soul of New York lives
+              in its quiet corners, historic waterfronts,
+              and close-knit neighborhoods.
+
+              This guide invites you to step off the
+              beaten path, slow down, and experience
+              the authentic, everyday magic of the
+              city's five boroughs.
             </p>
+
           </section>
 
         </div>
 
+
         <!-- FOOTER CREDIT -->
+
         <p class="footer-credit">
+
           This project was coded by Nora M. Berg and is
+
           <a
             href="https://github.com/NooMaaBee/Travel-Project"
             target="_blank"
@@ -359,6 +445,7 @@
           >
             open sourced
           </a>.
+
         </p>
 
       </footer>
