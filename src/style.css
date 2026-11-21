@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #431407;
+  background: #F0F7FF;
 }
 
 .container {
@@ -9,13 +9,13 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3
   )), url("images/central_park.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color:#FFF9EC;
   text-align: center;
-  padding: 200px 0;
+  padding: 100px 0;
 }
 
 header h1 {
