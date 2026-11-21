@@ -1,88 +1,151 @@
 
-<footer>
-  <div class="footer-grid">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Travel links -->
-    <div class="footer-section">
-      <h3>Travel Links</h3>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-      <ul class="footer-links">
-        <li>
-          <details class="airport-menu">
-            <summary>Airports</summary>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Welcome to New York</title>
+  </head>
 
-            <ul class="airport-options">
+  <body>
+    <div class="container">
+
+      <!-- HEADER -->
+      <header>
+        <h3>.TRAVEL GUIDE.</h3>
+        <h1>Welcome to New York</h1>
+        <h2>The Big Apple</h2>
+        <a href="#more">Learn more</a>
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main id="more">
+        <h2>Discover New York City</h2>
+        <p>
+          Explore the five boroughs, iconic landmarks,
+          and unique neighborhoods of the city that
+          never sleeps.
+        </p>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+
+        <div class="footer-grid">
+
+          <!-- COLUMN 1: TRAVEL LINKS -->
+          <nav class="footer-section" aria-label="Travel information">
+            <h3>Travel Links</h3>
+
+            <ul class="footer-links">
+
+              <li class="airport-menu" tabindex="0">
+                <span>Airports ▾</span>
+
+                <ul class="airport-options">
+                  <li>
+                    <a
+                      href="https://www.jfkairport.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      JFK Airport
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.newarkairport.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Newark Liberty
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
               <li>
-                <a href="https://www.jfkairport.com"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                  JFK Airport
+                <a
+                  href="https://www.google.com/maps/place/New+York/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Map of New York
                 </a>
               </li>
 
               <li>
-                <a href="https://www.newarkairport.com"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                  Newark Liberty
+                <a
+                  href="https://www.mta.info/agency/new-york-city-transit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Public Transport
                 </a>
               </li>
+
             </ul>
-          </details>
-        </li>
+          </nav>
 
-        <li>
-          <a href="https://www.google.com/maps/place/New+York/"
-             target="_blank"
-             rel="noopener noreferrer">
-            Map of New York
-          </a>
-        </li>
+          <!-- COLUMN 2: ABOUT -->
+          <section class="footer-section">
+            <h3>About</h3>
 
-        <li>
-          <a href="https://www.mta.info/agency/new-york-city-transit"
-             target="_blank"
-             rel="noopener noreferrer">
-            Public Transport
-          </a>
-        </li>
-      </ul>
+            <p>
+              New York is the most populous city in the
+              United States and a global hub for finance,
+              culture, and media. The city consists of five
+              distinct boroughs: Manhattan, Brooklyn,
+              Queens, The Bronx, and Staten Island,
+              each with its own unique character.
+              It is world-famous for its iconic landmarks
+              like the Statue of Liberty, Central Park,
+              and Times Square, as well as its vast
+              diversity and fast-paced energy.
+            </p>
+          </section>
+
+          <!-- COLUMN 3: DISCOVER NEW YORK -->
+          <section class="footer-section">
+            <h3>Discover New York</h3>
+
+            <p>
+              Beyond the bright lights and crowded avenues,
+              the true soul of New York lives in its quiet
+              corners, historic waterfronts, and close-knit
+              neighborhoods. This guide invites you to step
+              off the beaten path, slow down, and experience
+              the authentic, everyday magic of the city's
+              five boroughs.
+            </p>
+          </section>
+
+        </div>
+
+        <!-- FOOTER CREDIT -->
+        <p class="footer-credit">
+          This project was coded by Nora M. Berg and is
+          <a
+            href="https://github.com/NooMaaBee/Travel-Project"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open sourced
+          </a>.
+        </p>
+
+      </footer>
+
     </div>
-
-    <!-- About -->
-    <div class="footer-section">
-      <h3>About</h3>
-      <p>
-        New York is the most populous city in the
-        United States and a global hub for finance,
-        culture, and media. The city consists of five
-        distinct boroughs: Manhattan, Brooklyn,
-        Queens, The Bronx, and Staten Island.
-        It is world-famous for its iconic landmarks.
-      </p>
-    </div>
-
-    <!-- Description -->
-    <div class="footer-section">
-      <h3>Discover New York</h3>
-      <p>
-        Beyond the bright lights and crowded avenues,
-        the true soul of New York lives in its quiet
-        corners, historic waterfronts, and close-knit
-        neighborhoods. Discover the everyday magic
-        of the city's five boroughs.
-      </p>
-    </div>
-
-  </div>
-
-  <!-- Credits -->
-  <p class="footer-credit">
-    This project was coded by Nora M. Berg and is
-    <a href="https://github.com/NooMaaBee/Travel-Project"
-       target="_blank"
-       rel="noopener noreferrer">
-      open sourced
-    </a>.
-  </p>
-</footer>
+  </body>
+</html>

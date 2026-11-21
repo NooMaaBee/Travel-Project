@@ -1,4 +1,16 @@
+
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
   background: #F0F7FF;
 }
@@ -8,20 +20,30 @@ body {
   margin: 0 auto;
 }
 
+
+/* HEADER */
+
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3
-  )), url("images/central_park.jpg");
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("images/central_park.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
-  color:#F0F7FF;
+  background-position: center;
+
+  color: #F0F7FF;
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 
 header h1 {
   font-weight: 700;
   font-size: 96px;
-  line-height: 1;
+  line-height: 1.1;
   margin: 30px 0;
 }
 
@@ -40,26 +62,56 @@ header h3 {
   margin: 0;
 }
 
+
+/* HEADER BUTTON */
+
 header a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-  text-align: center;
-  color: #F0F7FF;
+  color: #1E1B4B;
+
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
+
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background: FFF9EC;
+  background: #FFF9EC;
+}
+
+header a:hover {
+  background: #F8FAFC;
 }
 
 
-/* FOOTER */
+/* MAIN CONTENT */
+
+main {
+  background: #F0F7FF;
+  color: #1E1B4B;
+  padding: 65px 30px;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 30px;
+  margin: 0 0 15px;
+}
+
+main p {
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+
+/* FOOTER BACKGROUND */
 
 footer {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       rgba(15, 23, 42, 0.72),
       rgba(15, 23, 42, 0.72)
     ),
@@ -73,12 +125,17 @@ footer {
   padding: 70px 50px 30px;
 }
 
-/* THREE COLUMNS */
+
+/* FOOTER COLUMNS */
 
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  gap: 50px;
+  gap: 45px;
+}
+
+.footer-section {
+  min-width: 0;
 }
 
 .footer-section h3 {
@@ -93,7 +150,8 @@ footer {
   margin: 0;
 }
 
-/* VERTICAL TRAVEL LINKS */
+
+/* FOOTER LINKS */
 
 .footer-links {
   list-style: none;
@@ -114,23 +172,16 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* AIRPORT DROPDOWN */
 
-.airport-menu summary {
+/* AIRPORT DROPDOWN MENU */
+
+.airport-menu {
   cursor: pointer;
-  list-style: none;
+  outline-offset: 5px;
 }
 
-.airport-menu summary::-webkit-details-marker {
-  display: none;
-}
-
-.airport-menu summary::after {
-  content: " ▾";
-}
-
-.airport-menu[open] summary::after {
-  content: " ▴";
+.airport-menu span {
+  display: inline-block;
 }
 
 .airport-options {
@@ -145,23 +196,42 @@ footer a:hover {
 }
 
 .airport-menu:hover .airport-options,
-.airport-menu:focus-within .airport-options,
-.airport-menu[open] .airport-options {
+.airport-menu:focus-within .airport-options {
   display: block;
 }
 
-/* CREDITS */
+
+/* FOOTER CREDIT */
 
 .footer-credit {
   text-align: center;
   font-size: 12px;
+  line-height: 1.6;
   margin: 55px 0 0;
   opacity: 0.85;
 }
 
-/* MOBILE */
+
+/* RESPONSIVE DESIGN */
 
 @media (max-width: 900px) {
+
+  header {
+    padding: 60px 20px;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
   footer {
     padding: 50px 25px 25px;
   }
@@ -169,5 +239,24 @@ footer a:hover {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 35px;
+  }
+
+  main {
+    padding: 45px 20px;
+  }
+
+  main h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  header h1 {
+    font-size: 38px;
+  }
+
+  header h3 {
+    letter-spacing: 3px;
   }
 }
