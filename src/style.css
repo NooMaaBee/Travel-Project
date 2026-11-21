@@ -356,6 +356,18 @@ main p {
   padding: 0 20px 25px;
 }
 
+/* HIDDEN GEMS SUBTITLE */
+
+.section-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #4CAF50;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+
 
 /* ========================================
    HIDDEN GEMS BUTTONS
